@@ -12,7 +12,7 @@ VERSION = "0.0.11"
 # prerequisite: setuptools
 # http://pypi.python.org/pypi/setuptools
 
-REQUIRES = ["urllib3", "six", "certifi", "DateTime", "Naked", "PyJWT", "PyNaCl", "PyYAML",
+REQUIRES = ["urllib3", "six", "certifi", "DateTime", "PyJWT", "PyNaCl", "PyYAML",
             "asn1crypto",
             "bcrypt",
             "certifi",
