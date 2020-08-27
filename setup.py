@@ -21,7 +21,6 @@ REQUIRES = ["urllib3", "six", "certifi", "DateTime", "PyJWT", "PyNaCl", "PyYAML"
             "extras",
             "fixtures",
             "configparser",
-            "crypto",
             "cryptography",
             "enum34;python_version<'3.4'",
             "funcsigs",
