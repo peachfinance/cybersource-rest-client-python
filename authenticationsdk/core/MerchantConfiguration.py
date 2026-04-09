@@ -613,7 +613,7 @@ class MerchantConfiguration:
             for keys, values in list(details_copy.items()):
                 details_copy[keys] = str(values)
 
-        self.logger.info("Mconfig >      " + str(ast.literal_eval(json.dumps(details_copy))))
+            self.logger.info("Mconfig >      " + str(ast.literal_eval(json.dumps(details_copy))))
 
         import numbers
         if not isinstance(self.max_num_idle_connections, numbers.Number):
