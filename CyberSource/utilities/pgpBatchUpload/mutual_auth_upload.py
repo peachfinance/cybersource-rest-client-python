@@ -3,7 +3,6 @@ import uuid
 
 import certifi
 import urllib3
-from urllib3 import BaseHTTPResponse
 
 import CyberSource.logging.log_factory as LogFactory
 from authenticationsdk.util.GlobalLabelParameters import GlobalLabelParameters
@@ -137,7 +136,7 @@ class MutualAuthUpload:
         ca_cert_path: str,
         cert_password: str = None,
         verify_ssl: bool = True,
-    ) -> BaseHTTPResponse:
+    ) -> urllib3.HTTPResponse:
         """
         Send HTTP request with the file and certificates.
 
