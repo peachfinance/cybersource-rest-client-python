@@ -78,8 +78,6 @@ class RESTClientObject(object):
                     key_password=hash_candidates_dict['key_password'],
                     proxy_url=hash_candidates_dict['proxy'],
                     proxy_headers=hash_candidates_dict['proxy_auth_headers'],
-                    keepalive_delay=hash_candidates_dict['keepalive_delay'],
-                    keepalive_idle_window=hash_candidates_dict['keepalive_idle_window']
                 )
             else:
                 my_pool_manager = urllib3.PoolManager(
@@ -90,8 +88,6 @@ class RESTClientObject(object):
                     cert_file=hash_candidates_dict['cert_file'],
                     key_file=hash_candidates_dict['key_file'],
                     key_password=hash_candidates_dict['key_password'],
-                    keepalive_delay=hash_candidates_dict['keepalive_delay'],
-                    keepalive_idle_window=hash_candidates_dict['keepalive_idle_window']
                 )
 
             cls._urllib3_poolmanagers[hashed_key] = my_pool_manager

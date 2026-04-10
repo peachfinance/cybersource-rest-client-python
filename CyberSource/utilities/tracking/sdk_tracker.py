@@ -47,9 +47,9 @@ class SdkTracker:
             if merchantConfig_developerId is not None and merchantConfig_developerId.strip() != "":
                 developer_id_value = merchantConfig_developerId.strip()
 
-            if 'client_reference_information' not in tester:
+            if 'client_reference_information' not in tester or tester['client_reference_information'] is None:
                 tester['client_reference_information'] = {}
-            if 'partner' not in tester['client_reference_information']:
+            if 'partner' not in tester['client_reference_information'] or tester['client_reference_information']['partner'] is None:
                 tester['client_reference_information']['partner'] = {}
             if 'developer_id' not in tester['client_reference_information']['partner'] or not tester['client_reference_information']['partner']['developer_id']:
                 tester['client_reference_information']['partner']['developer_id'] = developer_id_value
